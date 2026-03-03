@@ -10,12 +10,12 @@ CREATE TABLE IF NOT EXISTS user_activity (
     user_id INT NOT NULL,
     avg_watch_time FLOAT NOT NULL,
     days_inactive INT NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES user(id)
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
 CREATE TABLE IF NOT EXISTS subscription (
     id  INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     user_id INT NOT NULL,
     payments_failed INT NOT NULL,
     churned BOOLEAN NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES user(id)
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
