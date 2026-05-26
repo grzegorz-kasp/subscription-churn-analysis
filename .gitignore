@@ -17,4 +17,5 @@ dist/
 *.sql.bak
 *.log
 .DS_Store
+.env
 Thumbs.db
