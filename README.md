@@ -67,19 +67,20 @@ A **Random Forest Classifier** (n_estimators=100) was trained to predict the bin
 ### Evaluation Metrics
 The model achieved an overall accuracy of **72%** on unseen validation records:
 
-==================================================
-         CUSTOMER CHURN EVALUATION REPORT         
-==================================================
+==================================================<br>
+         CUSTOMER CHURN EVALUATION REPORT    <br>     
+==================================================<br>
 --- CONFUSION MATRIX ---
-True Negatives (Poprawnie wskazani lojalni): 83
-False Positives (Błędnie wskazani jako odejścia): 33
-False Negatives (Przeoczone odejścia): 23
-True Positives (Poprawnie wskazane odejścia): 61
+True Negatives (Poprawnie wskazani lojalni): 83<br>
+False Positives (Błędnie wskazani jako odejścia): 33<br>
+False Negatives (Przeoczone odejścia): 23<br>
+True Positives (Poprawnie wskazane odejścia): 61<br>
 
 --- CLASSIFICATION METRICS ---
-              precision    recall  f1-score   support
-           1       0.65      0.73      0.69        84
-    accuracy                           0.72       200
+* Precision (Class 1): 0.65
+* Recall (Class 1): 0.73
+* F1-Score (Class 1): 0.69
+* Overall Accuracy: 0.72 (200 rows)
 
 * **Business Impact (Recall = 73%):** The model correctly captures 73% of the users who will actually churn, enabling the marketing team to target nearly 3/4 of endangered accounts proactively.
 
